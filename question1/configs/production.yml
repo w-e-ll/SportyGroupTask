@@ -1,0 +1,36 @@
+environment: production
+
+service:
+  name: config-resolver-service
+  host: prod-api.internal.company
+  port: 8443
+  debug: false
+  replicas: 5
+
+database:
+  host: prod-db.internal.company
+  port: 5432
+  username: prod_app_user
+  password: super-secret-production-password
+  pool_size: 20
+
+api:
+  base_url: https://api.company.com/v1
+  api_key: prod-api-key-123
+  timeout_seconds: 30
+
+feature_flags:
+  enable_new_dashboard: false
+  enable_async_processing: true
+
+logging:
+  level: INFO
+  format: json
+
+cache:
+  enabled: true
+  ttl_seconds: 300
+
+security:
+  jwt_secret: production-jwt-secret
+  allow_insecure_tls: false

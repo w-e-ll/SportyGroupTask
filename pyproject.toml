@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sporty-group-takehome"
+version = "1.0.0"
+description = "Production-oriented Python take-home assignment for Sporty Group"
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = [
+    "PyYAML>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "."
+]
+
+testpaths = [
+    "question1/tests",
+    "question2/tests"
+]
+
+addopts = "-v"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]

@@ -1,0 +1,27 @@
+environment: production
+
+service:
+  name: broken-service
+  host: broken-api.internal.company
+  port: not-a-number
+  debug: false
+
+database:
+  host: prod-db.internal.company
+  port: 5432
+  username: prod_user
+  password: super-secret-password
+
+api:
+  base_url: https://api.company.com/v1
+  api_key: broken-api-key
+
+feature_flags:
+  enable_new_dashboard: true
+
+logging:
+  level: INFO
+
+broken_yaml:
+  key1: value1
+  key2: [unclosed-list

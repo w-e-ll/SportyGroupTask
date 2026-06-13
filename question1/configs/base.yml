@@ -1,0 +1,36 @@
+environment: base
+
+service:
+  name: config-resolver-service
+  host: localhost
+  port: 8080
+  debug: false
+  replicas: 2
+
+database:
+  host: localhost
+  port: 5432
+  username: app_user
+  password: base-password
+  pool_size: 10
+
+api:
+  base_url: https://api.example.com/v1
+  api_key: base-api-key
+  timeout_seconds: 15
+
+feature_flags:
+  enable_new_dashboard: false
+  enable_async_processing: false
+
+logging:
+  level: INFO
+  format: json
+
+cache:
+  enabled: true
+  ttl_seconds: 120
+
+security:
+  jwt_secret: base-jwt-secret
+  allow_insecure_tls: false
