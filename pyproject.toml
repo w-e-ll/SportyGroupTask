@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sporty-group-takehome"
-version = "1.0.0"
+version = "1.0.1"
 description = "Production-oriented Python take-home assignment for Sporty Group"
 readme = "README.md"
 requires-python = ">=3.13"

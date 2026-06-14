@@ -259,3 +259,8 @@ The implementations intentionally prioritize:
 rather than maximum feature completeness.
 
 The goal was to implement solutions similar to internal infrastructure tooling and operational backend systems rather than purely academic exercises.
+
+# Validated locally on:
+- Ubuntu Linux
+- Python 3.13
+- Docker
